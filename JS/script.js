@@ -14,7 +14,7 @@ var typed = new Typed("#animated-text", {
 });
 
 function downloadCV() {
-  window.open("./Assets/Resume/ShivamYadav_Resume.pdf", "_blank");
+  window.open("./Assets/Resume/Shivam_Yadav.pdf", "_blank");
 }
 
 // for social icons display on click
@@ -30,11 +30,10 @@ function toggleSocialLinks() {
   clearTimeout(hideTimeout);
   hideTimeout = setTimeout(() => {
     socialLinks.style.display = "none";
-  }, 4000);
+  }, 40000);
 }
 
-
-// document.querySelectorAll('.card').forEach(card => { 
+// document.querySelectorAll('.card').forEach(card => {
 //     gsap.to(card, {
 //       scale: 0.7,
 //       opacity: 0,

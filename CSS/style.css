@@ -512,7 +512,7 @@ html {
     font-size: 0.8rem;
   }
 }
-@media (max-width: 394px) {
+@media (max-width: 395px) {
   .welcome-panel,
   .right-panel,
   .left-panel .navbar {
@@ -523,6 +523,12 @@ html {
     width: 100%;
     margin-bottom: 10px;
     /* background-color: #fff; */
+  }
+
+  .social-links {
+    /* right: -2rem; */
+    bottom: 0.8rem;
+    right: 2rem;
   }
 }
 
