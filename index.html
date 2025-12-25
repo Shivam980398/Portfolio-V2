@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <div class="navbar">
+      <div class="logo">Shivam Yadav</div>
+      <input type="checkbox" id="menu-toggle" />
+
+      <div class="nav">
+        <label for="menu-toggle" class="hamburger-btn">
+          <svg viewBox="0 0 100 76" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="#menu"></use>
+            <use xlink:href="#menu"></use>
+          </svg>
+        </label>
+      </div>
+
+      <!-- Svg for hamburger menu -->
+      <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+        <symbol viewBox="0 0 100 56" id="menu">
+          <path
+            d="M48.33,45.6H18a14.17,14.17,0,0,1,0-28.34H78.86a17.37,17.37,0,0,1,0,34.74H42.33l-21-21.26L47.75,4"
+          />
+        </symbol>
+      </svg>
+
+      <div class="nav-links">
+        <a href="/nw.html">Home</a>
+        <a href="#Latest-works">Works</a>
+        <a href="#Skills">Skills</a>
+        <a href="#About">About Me</a>
+      </div>
+    </div>
+    <br /><br /><br />
+    <!-- Welcome section  -->
+    <section class="welcome-panel">
+      <div class="left-panel">
+        <img src="./Assets/images/img4.jpg" alt="Shivam" />
+      </div>
+      <div class="right-panel">
+        <h1>Hi! I'm <span class="name">Shivam Yadav</span></h1>
+        <h2>I'm a <span id="animated-text"></span></h2>
+        <div class="profile-links">
+          <button class="download-button" onclick="downloadCV()">
+            <span>DownLoad CV</span>
+          </button>
+          <button class="hire-button" onclick="toggleSocialLinks()">
+            <span>Hire me</span>
+          </button>
+          <ul class="social-links">
+            <li>
+              <i
+                class="fab fa-linkedin-in"
+                onclick="window.location.href=`https://www.linkedin.com/in/sʜɪᴠᴀᴍ-yadav-76709322b`"
+              ></i>
+            </li>
+            <li>
+              <i
+                class="fab fa-github"
+                onclick="window.location.href='https://github.com/Shivam980398'"
+              ></i>
+            </li>
+            <li>
+              <i
+                class="fas fa-envelope"
+                onclick="window.location.href='mailto:shivamyadav@example.com';"
+              ></i>
+              <!-- </a> -->
+            </li>
+            <li>
+              <i
+                class="fab fa-instagram"
+                onclick="window.location.href='https://www.instagram.com/ShivamYadav'"
+              ></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <br /><br /><br /><br /><br /><br />
+    <!-- Latest Work section -->
+    <section
+      class="latest-works-section block"
+      id="Latest-works"
+      style="z-index: 2"
+    >
+      <h2 class="latest-works-heading appear-animation">Latest Works</h2>
+      <br />
+
+      <div class="works-container first-work">
+        <div class="timeline-line-left"></div>
+        <div class="timeline-dot first-dot"></div>
+        <a
+          href="/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="work-link appear-animation"
+        >
+          <div class="work-item appear-animation">
+            <img
+              class="work-image electrohub-image"
+              src="./Assets/images/e-sahyog.png"
+              alt=""
+            />
+            <span
+              class="work-title electrohub-title"
+              onclick="window.location.href='https:/electrohubs.netlify.app'"
+            >
+              E-Sahyog
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="external-link-icon"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <div class="work-details appear-animation">
+          <h3 class="work-title-large electrohub-title-large">E-Sahyog</h3>
+          <span class="work-subtitle electrohub-subtitle">
+            (Unified Smart City Platform)
+          </span>
+          <p class="work-description">
+            E-Sahyog is a unified smart city platform designed to enhance urban
+            living through technology. It integrates various city services into
+            a single platform, providing residents with easy access to
+            information and services. Built using React.js and Node.js, E-Sahyog
+            ensures a seamless user experience with fast loading times and
+            intuitive navigation.
+          </p>
+
+          <ul class="tech-stack">
+            <li class="tech-item">#react.js</li>
+            <li class="tech-item">#express.js</li>
+            <li class="tech-item">#node.js</li>
+            <li class="tech-item">#leaflet map</li>
+            <li class="tech-item">#mongoDB</li>
+            <li class="tech-item">#mongoose</li>
+            <li class="tech-item">#css</li>
+            <li class="tech-item">#javascript</li>
+            <li class="tech-item">#jwt</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="works-container second-work">
+        <div class="timeline-line-left"></div>
+        <div class="timeline-dot first-dot"></div>
+        <a
+          href="https://electrohubs.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="work-link appear-animation"
+        >
+          <div class="work-item appear-animation">
+            <img
+              class="work-image electrohub-image"
+              src="./Assets/images/electrohub1.png"
+              alt=""
+            />
+            <span
+              class="work-title electrohub-title"
+              onclick="window.location.href='https:/electrohubs.netlify.app'"
+            >
+              ElectroHub
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="external-link-icon"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <div class="work-details appear-animation">
+          <h3 class="work-title-large electrohub-title-large">ElectroHub</h3>
+          <span class="work-subtitle electrohub-subtitle"> (E-commerce) </span>
+          <p class="work-description">
+            ElectroHub is an e-commerce website for electronic products. It has
+            a user-friendly interface and provides a seamless shopping
+            experience. The site is built using React.js and Node.js, ensuring
+            fast loading times and smooth navigation.
+          </p>
+
+          <ul class="tech-stack">
+            <li class="tech-item">#react.js</li>
+            <li class="tech-item">#express.js</li>
+            <li class="tech-item">#node.js</li>
+            <li class="tech-item">#swiper.js</li>
+            <li class="tech-item">#mongoDB</li>
+            <li class="tech-item">#mongoose</li>
+            <li class="tech-item">#css</li>
+            <li class="tech-item">#javascript</li>
+            <li class="tech-item">#jwt</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="works-container appear-animation third-work">
+        <div class="timeline-line-left"></div>
+        <div class="timeline-dot first-dot"></div>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="work-link">
+          <div class="work-item">
+            <img
+              class="work-image electrohub-image"
+              src="./Assets/images/ml.png"
+              alt=""
+            />
+            <span
+              class="work-title electrohub-title"
+              onclick="window.location.href='https:/financialadvisorysystem.netlify.app/'"
+            >
+              Finance Advisory System
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="external-link-icon"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <div class="work-details">
+          <h3 class="work-title-large electrohub-title-large">
+            Finance Advisory System
+          </h3>
+          <span class="work-subtitle electrohub-subtitle">
+            (Machine Learning Project)
+          </span>
+          <p class="work-description">
+            The Finance Advisory System is a machine learning project that
+            provides financial advice based on user input. It uses various
+            algorithms to analyze data and provide personalized recommendations.
+            The system is designed to be user-friendly and efficient, making it
+            easy for users to get the financial advice they need.
+          </p>
+
+          <ul class="tech-stack">
+            <li class="tech-item">#javascript</li>
+            <li class="tech-item">#react.js</li>
+            <li class="tech-item">#node.js</li>
+            <li class="tech-item">#express.js</li>
+            <li class="tech-item">#mongoDB</li>
+            <li class="tech-item">#swiper.js</li>
+            <li class="tech-item">#cookie</li>
+            <li class="tech-item">#toast</li>
+            <li class="tech-item">#tailwindcss</li>
+            <li class="tech-item">#jwt</li>
+            <li class="tech-item">#machinelearning</li>
+            <li class="tech-item">#python</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="works-container appear-animation fourth-work">
+        <div class="timeline-line-left"></div>
+        <div class="timeline-dot first-dot"></div>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="work-link">
+          <div class="work-item">
+            <img
+              class="work-image electrohub-image"
+              src="./Assets/images/chess.png"
+              alt=""
+            />
+            <span
+              class="work-title electrohub-title"
+              onclick="window.location.href=''"
+            >
+              Chess Game
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="external-link-icon"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <div class="work-details">
+          <h3 class="work-title-large electrohub-title-large">Chess Game</h3>
+          <span class="work-subtitle electrohub-subtitle">
+            (Socket.io & Ejs Project)
+          </span>
+          <p class="work-description">
+            The Chess Game is a multiplayer online chess game built using
+            Socket.io and Ejs. It allows users to play chess against each other
+            in real-time, with a user-friendly interface and smooth gameplay.
+            The game is designed to be engaging and fun, making it easy for
+            users to enjoy a classic game of chess with friends or other players
+            online.
+          </p>
+
+          <ul class="tech-stack">
+            <li class="tech-item">#javascript</li>
+            <li class="tech-item">#ejs</li>
+            <li class="tech-item">#node.js</li>
+            <li class="tech-item">#express.js</li>
+            <li class="tech-item">#mongoDB</li>
+
+            <li class="tech-item">#tailwindcss</li>
+            <li class="tech-item">#socket.io</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="works-container appear-animation fifth-work">
+        <div class="timeline-line-left"></div>
+        <div class="timeline-dot first-dot"></div>
+        <a
+          href="https://shivam980398.github.io/SummerTrainingAllCombined/Fitness/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="work-link"
+        >
+          <div class="work-item">
+            <img
+              class="work-image electrohub-image"
+              src="./Assets/images/fitness.png"
+              alt=""
+            />
+            <span
+              class="work-title electrohub-title"
+              onclick="window.location.href='https:/shivam980398.github.io/SummerTrainingAllCombined/Fitness/'"
+            >
+              Fitness
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="external-link-icon"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <div class="work-details">
+          <h3 class="work-title-large electrohub-title-large">Fitness</h3>
+          <span class="work-subtitle electrohub-subtitle">
+            (Fitness Blog)
+          </span>
+          <p class="work-description">
+            Fitness is a blog website that provides information and tips on
+            fitness, health, and wellness. The site is designed to be
+            user-friendly and visually appealing, making it easy for users to
+            navigate and find the information they need.
+          </p>
+
+          <ul class="tech-stack">
+            <li class="tech-item">#html</li>
+            <li class="tech-item">#css</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="works-container appear-animation sixth-work">
+        <div class="timeline-line-left"></div>
+        <div class="timeline-dot first-dot"></div>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="work-link">
+          <div class="work-item">
+            <img
+              class="work-image electrohub-image"
+              src="./Assets/images/myntra.png"
+              alt=""
+            />
+            <span
+              class="work-title electrohub-title"
+              onclick="window.location.href=''"
+            >
+              Myntra Clone
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="external-link-icon"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <div class="work-details">
+          <h3 class="work-title-large electrohub-title-large">Myntra Clone</h3>
+          <span class="work-subtitle electrohub-subtitle">
+            (E-commerce Clone)
+          </span>
+          <p class="work-description">
+            Myntra Clone is a replica of the popular e-commerce platform Myntra.
+            It features a responsive design, product listings, and a shopping
+            cart functionality. The project is built using HTML, CSS, and
+            JavaScript. fitness, health, and wellness. The site is designed to
+            be user-friendly and visually appealing, making it easy for users to
+            navigate and find the information they need.
+          </p>
+
+          <ul class="tech-stack">
+            <li class="tech-item">#html</li>
+            <li class="tech-item">#css</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="works-container appear-animation sixth-work">
+        <div class="work-details">
+          <h3 class="work-title-large fitness-title-large">
+            Bank Management System
+          </h3>
+          <span class="work-subtitle fitness-subtitle">
+            (Banking Simulation)
+          </span>
+          <p class="work-description">
+            The Bank Management System is a banking simulation project that
+            allows users to perform various banking operations such as account
+            creation, balance inquiry,cash deposit and withdrawl. The system is
+            designed to be user-friendly and efficient, making it easy for users
+            to manage their banking needs.
+          </p>
+
+          <ul class="tech-stack">
+            <li class="tech-item">#C++</li>
+            <li class="tech-item">#Oops</li>
+            <li class="tech-item">#filehandling</li>
+            <li class="tech-item">#errorhandling</li>
+            <!--
+                  <li class="tech-item">#mongoDB</li>
+                  <li class="tech-item">#mongoose</li>
+                  <li class="tech-item">#css</li>
+                  <li class="tech-item">#javascript</li>
+                  <li class="tech-item">#figma</li> -->
+          </ul>
+        </div>
+        <div class="timeline-line-right"></div>
+        <div class="timeline-dot second-dot" onclick="openlink()"></div>
+        <a
+          href="#"
+          class="order-1 sm-order-2 work-link justify-start"
+          target="_blank"
+        >
+          <div class="work-item ml-auto">
+            <img
+              class="work-image"
+              src="./Assets/images/bankmngment.png"
+              alt=""
+            />
+            <span class="work-title fitness-title">
+              Bank Management System
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="external-link-icon"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </span>
+          </div>
+        </a>
+      </div>
+
+      <div class="timeline-vertical-line appear-animation3"></div>
+    </section>
+
+    <!-- Skills section  -->
+    <section class="skills-tree-section" id="Skills" style="z-index: 2">
+      <!-- animated connected dot (Skills) -->
+
+      <!-- <div class="stack-area"> -->
+      <div class="right">
+        <div class="skills-heading">
+          <h2 class="skills-heading">Skills</h2>
+        </div>
+        <div class="skills-box">
+          <br /><br /><br /><br /><br />
+          <div class="skills-branch card" style="background-color: #0a192f">
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React.js</li>
+              <li>Bootstrap</li>
+              <li>Tailwind</li>
+            </ul>
+          </div>
+          <div class="skills-branch card" style="background-color: #0a192f">
+            <h3>Backend</h3>
+            <ul>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>JWT</li>
+              <li>REST APIs</li>
+              <li>Socket.io</li>
+            </ul>
+          </div>
+          <div class="skills-branch card" style="background-color: #0a192f">
+            <h3>Database</h3>
+            <ul>
+              <li>MongoDB</li>
+              <li>Mongoose</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+          <div class="skills-branch card" style="background-color: #0a192f">
+            <h3>Tools & Others</h3>
+            <ul>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Figma</li>
+              <li>Postman</li>
+            </ul>
+          </div>
+          <div class="skills-branch card" style="background-color: #0a192f">
+            <h3>Now I am exploring the world of AI and ML!</h3>
+            <ul>
+              <li>Python</li>
+              <li>Machine Learning</li>
+              <li>TensorFlow</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </section>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <!-- About Me section  -->
+    <section
+      id="About"
+      class="scroll-reveal"
+      style="padding-top: 2rem; z-index: 2"
+    >
+      <!-- animated connected dot (About) -->
+      <div class="connected-container">
+        <span class="connected-dot" aria-hidden="true"></span>
+        <span class="connected-line" aria-hidden="true"></span>
+        <span class="moving-dot" aria-hidden="true"></span>
+      </div>
+
+      <div
+        class="aboutbox"
+        style="
+          height: fit-content;
+          display: flex;
+          flex-wrap: wrap;
+          padding: 2rem;
+          filter: drop-shadow(0 0 50px rgba(59, 130, 246, 0.6));
+        "
+      >
+        <div
+          class="about-desc-box"
+          style="
+            filter: drop-shadow(0 0 50px rgba(59, 130, 246, 0.6));
+            background-color: #0a192f;
+          "
+        >
+          <h1 style="background-color: transparent"><span>About me</span></h1>
+          <hr />
+          <br />
+
+          <p
+            class="about-description appear-animation3"
+            style="
+              font-size: 1.2rem;
+              line-height: 1.6;
+              font-family: 'Poppins', sans-serif;
+              background-color: transparent;
+            "
+          >
+            <span>
+              Hi, I’m Shivam Yadav, a Computer Science student and a passionate
+              software developer. I enjoy building full-stack web applications
+              using MERN stack, React, and Tailwind, and I am currently
+              exploring the world of AI and Machine Learning to expand my skills
+              further. I love turning ideas into reality through clean,
+              efficient code and intuitive user interfaces. Apart from coding, I
+              actively participate in hackathons, open-source contributions, and
+              technology communities to learn and grow. My goal is to build
+              impactful products that solve real-world problems while constantly
+              improving my skills as a developer.
+            </span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <br /><br /><br />
+
+    <footer>
+      <p>&copy; 2024 Shivam Yadav. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/lenis@1.3.16/dist/lenis.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="JS/script.js"></script>
+  </body>
+</html>
