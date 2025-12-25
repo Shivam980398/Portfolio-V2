@@ -20,16 +20,11 @@ function downloadCV() {
 // for social icons display on click
 let hideTimeout;
 function toggleSocialLinks() {
-  const socialLinks = document.getElementsByClassName("social-links")[0];
-  if (socialLinks.style.display === "block") {
-    socialLinks.style.display = "none";
-  } else {
-    socialLinks.style.display = "block";
-  }
-
+  const socialLinks = document.querySelector(".social-links");
+  socialLinks.classList.toggle("show");
   clearTimeout(hideTimeout);
   hideTimeout = setTimeout(() => {
-    socialLinks.style.display = "none";
+    socialLinks.classList.remove("show");
   }, 40000);
 }
 
