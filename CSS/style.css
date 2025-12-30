@@ -1166,7 +1166,7 @@ html {
 
 @media (max-width: 800px) {
   .right {
-    height: 250vh;
+    height: 300vh;
   }
   .about-desc-box {
     width: fit-content;
