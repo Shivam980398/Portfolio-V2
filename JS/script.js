@@ -17,7 +17,6 @@ function downloadCV() {
   window.open("./Assets/Resume/Shivam_Yadav.pdf", "_blank");
 }
 
-// for social icons display on click
 let hideTimeout;
 function toggleSocialLinks() {
   const socialLinks = document.querySelector(".social-links");
@@ -28,24 +27,8 @@ function toggleSocialLinks() {
   }, 40000);
 }
 
-// document.querySelectorAll('.card').forEach(card => {
-//     gsap.to(card, {
-//       scale: 0.7,
-//       opacity: 0,
-//       scrollTrigger: {
-//         trigger: card,
-//         start: "top 15%",
-//         end: "bottom 15%",
-//         markers: true,
-//         scrub: true,
-//       },
-//     });
-// });
-
-// Initialize Lenis
 const lenis = new Lenis();
 
-// Use requestAnimationFrame to continuously update the scroll
 function raf(time) {
   lenis.raf(time);
   requestAnimationFrame(raf);

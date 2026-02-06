@@ -1,0 +1,112 @@
+.aboutbox {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: rgb(9, 10, 10);
+  color: #09bfdf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: #09bfdf 2px solid;
+}
+
+.aboutbox h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.ABOUT-ME {
+  font-size: 2.5rem;
+  color: #64ffda;
+}
+
+.block {
+  animation: app 3s linear;
+}
+
+.about-description {
+  background: rgba(16, 213, 167, 0.1);
+
+  border-radius: 20px;
+
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+.about-image {
+  position: relative;
+  width: 40%;
+  margin-right: 20px;
+}
+.about-image img {
+  border-radius: 2%;
+  width: 100%;
+  height: 100%;
+  margin-right: 10px;
+}
+.about-desc-box {
+  filter: drop-shadow(0 0 50px rgba(59, 130, 246, 0.6));
+  padding: 2rem;
+  text-wrap: wrap;
+  background-color: #0a192f;
+
+  border-radius: 0px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+
+  width: 55%;
+
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.scroll-reveal span {
+  color: hsl(0 0% 100% / 0.2);
+  background-clip: text;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-image: linear-gradient(90deg, white, white);
+  animation: scroll-reveal linear forwards;
+  animation-timeline: view();
+}
+.scroll-reveal h1 span {
+  animation-range-start: cover 15vh;
+  animation-range-end: cover 20vh;
+}
+.scroll-reveal p span {
+  animation-range-start: cover 21vh;
+  animation-range-end: cover 68vh;
+}
+@keyframes scroll-reveal {
+  to {
+    background-size: 100% 100%;
+  }
+}
+
+@keyframes app {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 800px) {
+  .right {
+    height: 300vh;
+  }
+  .about-desc-box {
+    width: fit-content;
+    height: auto;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgb(9, 10, 10);
+    color: #09bfdf;
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,99 @@
+.skills-tree-section {
+  color: #ccd6f6;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin-bottom: 100vh;
+}
+
+.skills-heading {
+  font-size: 2.5rem;
+  color: #64ffda;
+  border-top: #09bfdf 2px solid;
+  position: sticky;
+  top: 12vh;
+}
+
+.skills-branch {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+
+  width: 45%;
+
+  position: relative;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.skills-branch:hover {
+  transform: translateX(0);
+  box-shadow: 0 8px 20px rgba(100, 255, 218, 0.2);
+}
+
+.skills-branch h3 {
+  font-size: 1.5rem;
+  color: #64ffda;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+
+.skills-branch ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+}
+
+.skills-branch li {
+  background: rgba(16, 213, 167, 0.1);
+  border: 1px solid #64ffda;
+  border-radius: 20px;
+  padding: 6px 12px;
+  margin: 5px 0;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+.skills-branch li:hover {
+  background: #64ffda;
+  color: #0a192f;
+}
+
+.stack-area {
+  width: 100%;
+  height: 250vh;
+  position: relative;
+
+  display: flex;
+}
+
+.right {
+  width: 100%;
+  height: 200vh;
+}
+
+.skills-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  box-sizing: border-box;
+  padding: 35px;
+  display: flex;
+
+  flex-direction: column;
+  width: 200px;
+  height: auto;
+  max-height: 300px;
+  border-radius: 25px;
+  margin-top: 30px;
+
+  transition: 0.5s ease-in-out;
+  filter: drop-shadow(0 0 50px rgba(59, 130, 246, 0.6));
+  position: sticky;
+  top: 35vh;
+}
