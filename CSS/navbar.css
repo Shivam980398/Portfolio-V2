@@ -17,13 +17,12 @@
 }
 
 .logo {
-  font-size: 1.5rem;
-  margin-top: 5px;
-  margin-left: 15px;
-  cursor: pointer;
-  transition: 0.3s ease;
-  color: white;
-  background: none;
+  display: flex;
+
+  align-items: center;
+
+  bottom: 1px;
+  height: 1rem;
 }
 
 .nav-links {
@@ -176,7 +175,7 @@
     top: 0;
     right: 8%;
     width: 40%;
-    padding-bottom: 2%;
+    padding-bottom: 5%;
     height: fit-content;
     display: flex;
 
