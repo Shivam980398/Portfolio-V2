@@ -1,8 +1,8 @@
 .navbar {
-  width: 95%;
+  width: 100%;
   height: 60px;
   margin-top: 5px;
-  margin-left: 2%;
+  /* margin-left: 2%; */
   border: 1px solid rgb(83, 83, 83);
   background-color: rgb(18, 17, 17);
   position: fixed;
@@ -21,7 +21,6 @@
 
   align-items: center;
 
-  bottom: 1px;
   height: 1rem;
 }
 
@@ -157,11 +156,8 @@
 
 @media (max-width: 768px) {
   .navbar {
-    max-width: 97vw;
+    /* max-width: 97vw; */
     width: 100%;
-
-    padding: 0 0 0 0.8rem;
-    margin: 0 0 0 0.6rem;
   }
 
   .nav {
