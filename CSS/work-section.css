@@ -1,29 +1,36 @@
 .latest-works-section {
   max-width: fit-content;
   margin: 0 auto;
-  padding: 0px 16px 0px 16px;
+  margin-bottom: 40vh;
+  padding: 0px 1rem 0px 0.4rem;
   position: relative;
   padding-bottom: 32px;
+  top: 40%;
 }
 
 .latest-works-heading {
-  font-size: 24px;
-  background-color: #111;
-  position: relative;
-  z-index: 10;
-  font-weight: bold;
-  padding: 8px 16px;
-  width: max-content;
-  margin: 0 auto;
-  text-align: center;
-  color: #1788ae;
-  border-bottom: none;
+    background-color: #111;
+    position: relative;
+    z-index: 10;
+    font-weight: bold;
+    padding: 8px 16px;
+    width: max-content;
+    margin: 0 auto;
+    text-align: center;
+    color: #1788ae;
+    border-bottom: none;
+      /* position: fixed; */
+    top: 14vh;
+    margin-bottom: 4vh;
+    font-size: 40px;
+    border-bottom: 2px solid #1788ae;
+  
 }
 
 .works-container {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  /* gap: 16px; */
   margin-top: 32px;
   align-items: center;
   position: relative;
@@ -53,7 +60,7 @@
   width: 2px;
   background-color: #1788ae;
   position: absolute;
-  top: 0;
+  top: 14vh;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -153,6 +160,7 @@
 
 .work-details {
   width: 100%;
+  padding-right: 2rem;
 }
 
 .work-title-large {
@@ -317,10 +325,7 @@
   .latest-works-section {
     padding-bottom: 64px;
   }
-  .latest-works-heading {
-    font-size: 40px;
-    border-bottom: 2px solid #1788ae;
-  }
+
   .works-container {
     flex-direction: row;
     gap: 80px;
@@ -352,5 +357,31 @@
 @media (max-width: 640px) {
   .work-title {
     display: none;
+  }
+  .latest-works-heading {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+    .latest-works-heading{
+         margin-bottom: 14vh;
+    }
+ 
+  .work-item {
+    width: 100%;
+    height: 15rem;
+  }
+  .work-image {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+
+    filter: drop-shadow(0 0 60px rgba(59, 130, 246, 0.6));
+  }
+  .work-details {
+    margin-left: 3.5rem;
+    margin-top: 1rem;
   }
 }
