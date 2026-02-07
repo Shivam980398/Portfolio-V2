@@ -191,7 +191,6 @@
 
 @media (max-width: 768px) {
   .welcome-panel {
-    /* max-width: 94vw; */
     width: 105%;
 
     flex-direction: column;
@@ -210,11 +209,17 @@
     height: 16rem;
     margin-bottom: 20px;
   }
+  .profile-links {
+    width: 100%;
+    display: flex;
+  }
   .profile-links button {
-    width: 100px;
+    width: 50%;
+    margin: 0;
   }
   .profile-links span {
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
   }
 }
 @media (min-width: 768px) {
@@ -231,8 +236,12 @@
   }
   .profile-links,
   .profile-links button {
-    width: 100%;
+    width: 98%;
     margin-bottom: 10px;
+  }
+  .profile-links button span {
+    font-size: 1rem;
+    font-weight: bold;
   }
 
   .social-links {
