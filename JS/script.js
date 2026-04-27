@@ -14,7 +14,7 @@ var typed = new Typed("#animated-text", {
 });
 
 function downloadCV() {
-  window.open("./Assets/Resume/Shivam_Yadav.pdf", "_blank");
+  window.open("./Assets/Resume/Shivam_Yadav_Resume.pdf", "_blank");
 }
 
 let hideTimeout;

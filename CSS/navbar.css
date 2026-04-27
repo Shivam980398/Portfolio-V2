@@ -68,6 +68,7 @@
 .nav {
   display: none !important;
   align-items: center;
+  z-index: 1001;
 }
 
 .hamburger-btn {
@@ -168,8 +169,10 @@
 
     position: fixed;
     top: 1%;
-    right: 15%;
-    width: 40%;
+    right: 0%;
+    width: 70%;
+    max-width: 300px;
+    padding-right: 4rem;
     padding-bottom: 5%;
     height: fit-content;
     display: flex;
@@ -198,6 +201,7 @@
   }
 
   .nav-links a {
+    max-width: 200px;
     width: 80%;
     color: #007bff;
     font-size: 1.2rem;
